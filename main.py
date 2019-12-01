@@ -41,8 +41,10 @@ def exportData(ip):
 
 def main ():
     if(len(sys.argv) <= 1):
+        print("Erro: É necessário um arquivo .json como parâmetro")
         exit()
     elif(len(sys.argv) > 2):
+        print("Erro: Número de parâmetros excedido")
         exit()
 
     ip_address, network_mask = getData(sys.argv[1])
