@@ -1,3 +1,13 @@
+"""------------------------------------------------------------------------------ 
+    Descrição:    	Código responsável por importar,mostrar e exportar dados de
+                    um arquivo .json contendo um IP e máscara de rede. 
+
+    Autor:         	Matheus Batistela
+  
+    Data de criação:	01/12/2019
+    Revisão:			01/12/2019
+------------------------------------------------------------------------------"""
+
 import json
 import sys
 import ipnetcalc as ipc
@@ -36,7 +46,7 @@ def exportData(ip):
     }
 
     with open("net_stats.json", 'w') as output_file:
-            json.dump(data_output, output_file)
+            json.dump(data_output, output_file, indent=0)
 
 
 def main ():

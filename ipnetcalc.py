@@ -1,3 +1,12 @@
+"""------------------------------------------------------------------------------
+    Descrição:    	Biblioteca responsável por receber um IP e uma mácara de rede, 
+                    e retornar os dados de acordo com o método requisitado. 
+
+    Autor:         	Matheus Batistela
+  
+    Data de criação:	01/12/2019
+    Revisão:			01/12/2019
+------------------------------------------------------------------------------"""
 class IpCalculator:
 
     def __init__(self,ip_address,network_mask):
@@ -41,9 +50,9 @@ class IpCalculator:
     def isValidMask(self):
         zero_find = 0
         for bit in self.mask_binary:
-            if(bit == "0" and zero_find == 0):
+            if(bit == '0' and zero_find == 0):
                 zero_find = 1
-            elif(bit == "1" and zero_find == 1):
+            elif(bit == '1' and zero_find == 1):
                 return 0
         return 1
 
@@ -59,7 +68,7 @@ class IpCalculator:
 
     def ipClass(self):
         first_byte = self.ip_decimal[0]
-        if(first_byte >= 1 and first_byte <= 127): return 'A'
+        if(first_byte >= 0 and first_byte <= 127): return 'A'
         elif(first_byte >= 128 and first_byte <= 191): return 'B'
         elif(first_byte >= 192 and first_byte <= 223): return 'C'
         elif(first_byte >= 224 and first_byte <= 239): return 'D'
