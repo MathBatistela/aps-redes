@@ -39,10 +39,10 @@ python3 main.py nome_do_arquivo.json
 
 Arquivo data.json:
 ```
-{
+    {
     "ipAddr": "192.168.0.1",
     "netMask": "255.255.255.0"
-}
+    }
 ```
 
 Comando:
