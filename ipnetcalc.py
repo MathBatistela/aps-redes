@@ -2,10 +2,10 @@
     Descrição:    	Biblioteca responsável por receber um IP e uma mácara de rede, 
                     e retornar os dados de acordo com o método requisitado. 
 
-    Autor:         	Matheus Batistela
+    Autores:         	Matheus Batistela
   
-    Data de criação:	01/12/2019
-    Revisão:			01/12/2019
+    Data de criação:	30/11/2019
+    Revisão:			05/12/2019
 ------------------------------------------------------------------------------"""
 class IpCalculator:
 

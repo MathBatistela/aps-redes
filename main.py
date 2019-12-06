@@ -2,10 +2,10 @@
     Descrição:    	Código responsável por importar,mostrar e exportar dados de
                     um arquivo .json contendo um IP e máscara de rede. 
 
-    Autor:         	Matheus Batistela
+    Autores:         	Matheus Batistela
   
-    Data de criação:	01/12/2019
-    Revisão:			01/12/2019
+    Data de criação:	30/11/2019
+    Revisão:			05/12/2019
 ------------------------------------------------------------------------------"""
 
 import json
